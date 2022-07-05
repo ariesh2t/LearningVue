@@ -23,7 +23,7 @@
                 Learn more <a v-bind:href="vueLink">about Vue</a>
             </p>
             <button v-on:click="random()">Click to randomly display the text below</button>
-            <p>{{ showText }}</p>
+            <p v-html="showText"></p>
         </section>
     </body>
 </html>
