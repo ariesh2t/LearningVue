@@ -3,33 +3,33 @@ const app = Vue.createApp({
       return {
         lastName: '',
         name: '',
-        // yourName: '',
+        yourName: '',
       };
     },
     watch: {
-        // name(value) {
-        //     if (value === '') {
-        //         this.yourName = ''
-        //     }
+        name(value) {
+            if (value === '') {
+                this.yourName = ''
+            }
 
-        //     this.yourName = value + ' ' + this.lastName
-        // },
-        // lastName(value) {
-        //     if (value === '') {
-        //         this.yourName = ''
-        //     }
+            this.yourName = value + ' ' + this.lastName
+        },
+        lastName(value) {
+            if (value === '') {
+                this.yourName = ''
+            }
 
-        //     this.yourName = this.name + ' ' + value 
-        // }
+            this.yourName = this.name + ' ' + value 
+        }
     },
     computed: {
-        yourName() {
-        if (this.lastName === '' || this.name === '') {
-          return ''
-        }
+    //     yourName() {
+    //     if (this.lastName === '' || this.name === '') {
+    //       return ''
+    //     }
 
-        return this.name + ' ' + this.lastName
-      }
+    //     return this.name + ' ' + this.lastName
+    //   }
     }
   });
   
