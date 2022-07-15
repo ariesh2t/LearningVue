@@ -33,9 +33,29 @@
     background: #fde5e5;
   }
   
-  .healthbar__value {
-    background-color: #00a876;
-    width: 100%;
+  .healthbar__value, .health_attack {
+    background-color: #e2df15;
+    position: relative;
+    z-index: 3;
+    transition: .7s;
+    height: 100%;
+  }
+
+  .health_attack{
+    position: relative;
+    bottom: 75px;
+    z-index: 1;
+    transition: 1.5s;
+    background-color: #f0042c;
+    height: 100%;
+  }
+
+  .health_heal{
+    position: relative;
+    bottom: 38px;
+    z-index: 2;
+    transition: .2s;
+    background-color: #0ad62c;
     height: 100%;
   }
   
