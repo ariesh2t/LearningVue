@@ -43,7 +43,7 @@
 
   .health_attack{
     position: relative;
-    bottom: 75px;
+    bottom: 76px;
     z-index: 1;
     transition: 1.5s;
     background-color: #f0042c;
